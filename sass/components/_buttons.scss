@@ -1,0 +1,113 @@
+
+.btn {
+    &:link,
+    &:visited{
+    display: inline-block;
+    text-align: center;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    }
+
+&--full:link,
+&--full:visited{
+    border: 1px solid $color-pale-white;
+    color:$color-pale-white;
+    border-radius: 0.5rem;
+    transition: background-color 0.2s, border 0.2s;
+} 
+
+&--full:hover,
+&--full:active{
+    background-color: #8f771a;
+    border: 1px solid transparent;
+} 
+
+&--gold:link,
+&--gold:visited{
+    padding: 0.5rem 1rem;
+    border: 1px solid $color-golden;
+    color:$color-golden;
+    border-radius: 0.5rem;
+    transition: background-color 0.2s, border 0.2s;
+} 
+
+&--gold:hover,
+&--gold:active{
+    background-color: #8f771a;
+    color: white;
+    border: 1px solid transparent;
+} 
+
+& ion-icon[name="arrow-forward-outline"]{
+    vertical-align: middle;
+    margin-left: 1rem;
+}
+
+
+&--black:link,
+&--black:visited{
+    color: $color-black;
+    border: 1px solid $color-black;
+    margin-right: 2rem;
+    transition: color 0.2s, border 0.2s, background-color 0.2s;
+    border-radius: 0.5rem;
+}
+
+&--black:hover,
+&--black:active{
+    color: $color-pale-white;
+    border: 1px solid transparent;
+    background-color: #8f771a;
+}
+
+}
+
+.toggle-btn{
+    display: none;
+}
+
+@include respond(tab-port){
+    .toggle-btn{
+        display: block;
+        float: right;
+        color:white;
+        font-size: 8rem;
+        padding-right: 1rem;
+        margin-right: 1rem;
+        background-color: transparent;
+        border: transparent;
+        text-decoration: none;
+        cursor: pointer;
+        transition: transform 0.2s ease-in;
+    }
+    
+    .toggle-btn:active{
+        transform:translateY(2rem);
+    }
+ }
+
+
+input[type=submit]{
+    display: inline-block;
+    text-align: center;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    background-color: $color-white;
+    color: $color-black;
+    border: 1.5px solid $color-black;
+    margin-right: 2rem;
+    transition: color 0.2s, border 0.2s, background-color 0.2s;
+    border-radius: 0.5rem;
+    @include respond(tab-port){
+      margin-right: 0;
+      margin-top: -3rem;
+      margin-bottom: 2rem;
+    }
+    }
+
+input[type=submit]:hover,
+input[type=submit]:active{
+        color: $color-pale-white;
+        border: 1px solid transparent;
+        background-color: #8f771a;
+    }

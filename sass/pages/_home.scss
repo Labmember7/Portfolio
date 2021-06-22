@@ -1,0 +1,19 @@
+.section-about{
+    padding: 6rem 0;
+
+    @include respond(tab-port){
+        padding: 4rem 0;
+     }
+}
+
+.skills{
+    list-style: none;
+    padding: 2rem;
+}
+.skill{
+    padding: 2rem;
+}
+.section-project{
+    padding:8rem 0;
+}
+

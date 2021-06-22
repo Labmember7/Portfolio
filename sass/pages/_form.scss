@@ -1,0 +1,48 @@
+.section-form{
+    padding-top: 3.5rem;
+    padding-bottom: 3rem;
+    width: 60%;
+    margin: 0 auto;
+    font-size: 110%;
+
+    @include respond(tab-port){
+        width: 100%;
+      }
+}
+
+input[name=name],
+input[type=email],
+textarea{
+	width: 70%;
+	padding: 0.9rem;
+  border-radius: 3px;
+  margin-bottom: 2.25rem;
+  border: 1px solid $color-golden;
+    @include respond(tab-port){
+        padding: 0.3rem;
+      }
+}
+
+input[type=text]:focus,
+input[type=email]:focus,
+textarea:focus{
+  border: 2px solid $color-golden;
+}
+
+
+textarea{
+    height: 10rem;
+    @include respond(tab-port){
+      height: 8rem;
+    }
+}
+
+.labelName{
+   padding-left: 8rem;
+   @include respond(tab-port){
+   padding-left: 0;
+   width: 100%;
+ }
+}
+
+*:focus{outline: none;}

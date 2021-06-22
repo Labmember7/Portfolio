@@ -1,0 +1,26 @@
+.section-project{
+    padding: 10rem 0;
+
+    @include respond(tab-port){
+        padding: 5rem 0;
+     }
+    &__text{
+        float: left;
+
+        &--title{
+            font-weight: bold;
+        }
+
+        &--desc{
+            margin-bottom: 2rem;
+        }
+    }
+
+    &__image{
+
+        & .img-fluid{
+            width: 100%;
+
+        }
+    }
+}
