@@ -282,7 +282,7 @@ input[type=submit]:active {
   }
 }
 .card__side--back {
-  background-image: linear-gradient(to right bottom, #eccf57, #d7b011);
+  background-image: linear-gradient(to right bottom, #30518f, #d8d8d8);
   transform: rotateY(180deg);
 }
 @media (max-width: 56.25em) {
