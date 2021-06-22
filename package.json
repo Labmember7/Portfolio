@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/SarveshKadam/portfolio.git"
+    "url": "git+https://github.com/Labmember7/portfolio.git"
   },
   "author": "Sarvesh Kadam",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/SarveshKadam/portfolio/issues"
+    "url": "https://github.com/Labmember7/portfolio/issues"
   },
-  "homepage": "https://github.com/SarveshKadam/portfolio#readme",
+  "homepage": "https://github.com/Labmember7/portfolio#readme",
   "devDependencies": {
     "node-sass": "^5.0.0"
   },
